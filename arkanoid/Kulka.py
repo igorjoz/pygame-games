@@ -14,7 +14,7 @@ class Kulka(pygame.sprite.Sprite):
         self.przegrana = False
 
     def zresetuj_pozycje(self):
-        self.wspolrzedne = vec(SZEROKOSC_EKRANU/2, WYSOKOSC_EKRANU - 140)
+        self.wspolrzedne = vec(SZEROKOSC_EKRANU//2, WYSOKOSC_EKRANU - 140)
         self.pozycja = self.obraz_kulki.get_rect(center = self.wspolrzedne)
         self.wektor = vec(0,-10)
         self.kat_nachylenia = random.randrange(-30, 30)
